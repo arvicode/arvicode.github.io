@@ -13,11 +13,6 @@
     <meta name="keywords" content="" />
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/init.js"></script>
     <noscript>
       <link rel="stylesheet" href="css/skel-noscript.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -41,73 +36,75 @@
       <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="left-sidebar.html">About me</a></li>
-          <li><a href="right-sidebar.html">Portfolio</a></li>
-          <li><a href="no-sidebar.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a id="go-to-about" href="#">About me</a></li>
+          <li><a id="go-to-portfolio" href="#portfolio">Portfolio</a></li>
+          <li><a id="go-to-contact" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
     <!-- Banner -->
-    <div id="banner">
-      <h2>Hey, I'm <strong>Arvind</strong>.</h2>
-      <span class="byline">
-        A Computer Science Engineer, an <a href="in.linkedin.com/in/arvindv20/">IBMer</a><a href="https://soundcloud.com/v_arvind">Composer</a>.
-        <a href="http://www.mapquest.com/#fa5f49c3496b35975586846a">Kolkata</a>, India.
-      </span>
-    </div>
-    <!-- Carousel -->
-    <div class="carousel">
-      <div class="reel">
-        <article>
-          <a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/t1/59943_10152578551593065_1741628077_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/t1/59943_10152578551593065_1741628077_n.jpg" alt="" /></a>
-          <header>
-            <h3><a href="#">Composer</a></h3>
-          </header>
-          <p>Songs and backing tracks for short films and advertisements</p>              
-        </article>
-        <article>
-          <a href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/t1/531906_10152354587883065_1319448255_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/t1/531906_10152354587883065_1319448255_n.jpg" alt="" /></a>
-          <header>
-            <h3><a href="#">Guitarist</a></h3>
-          </header>
-          <p>Play at live gigs. Guitar Tutor </p>             
-        </article>
-        <article>
-          <a href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1/1000493_10152052662928065_1325414723_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1/1000493_10152052662928065_1325414723_n.jpg" alt="" /></a>
-          <header>
-            <h3><a href="#">Research Assistant</a></h3>
-          </header>
-          <p>Have published two research papers.</p>              
-        </article>
-        <article>
-          <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/29357_10151537422158065_1460399246_n.jpg?lvh=1" class="image featured"><img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/29357_10151537422158065_1460399246_n.jpg?lvh=1" alt="" /></a>
-          <header>
-            <h3><a href="#">IBMer</a></h3>
-          </header>
-          <p>Work on Teradata 13 and Informatica PowerCenter 9.1.</p>             
-        </article>
-        <article>
-          <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/374782_10150600586553065_388208086_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/374782_10150600586553065_388208086_n.jpg" alt="" /></a>
-          <header>
-            <h3><a href="#">Public Speaker</a></h3>
-          </header>
-          <p>I give lectures on music and "The Art of Presentations".</p>             
-        </article>
-        <article>
-          <a href="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash2/t1/388441_329603890393014_981537529_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash2/t1/388441_329603890393014_981537529_n.jpg" alt="" /></a>
-          <header>
-            <h3><a href="#">Blogging</a></h3>
-          </header>
-          <p>Am an avid blogger and blog about music and guitars and accessories in great depth.</p>              
-        </article>
+    <div id="about-me">
+      <div id="banner">
+        <h2>Hey, I'm <strong>Arvind</strong>.</h2>
+        <span class="byline">
+          A Computer Science Engineer, an <a href="in.linkedin.com/in/arvindv20/">IBMer</a><a href="https://soundcloud.com/v_arvind">Composer</a>.
+          <a href="http://www.mapquest.com/#fa5f49c3496b35975586846a">Kolkata</a>, India.
+        </span>
+      </div>
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="reel">
+          <article>
+            <a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/t1/59943_10152578551593065_1741628077_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/t1/59943_10152578551593065_1741628077_n.jpg" alt="" /></a>
+            <header>
+              <h3><a href="#">Composer</a></h3>
+            </header>
+            <p>Songs and backing tracks for short films and advertisements</p>              
+          </article>
+          <article>
+            <a href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/t1/531906_10152354587883065_1319448255_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/t1/531906_10152354587883065_1319448255_n.jpg" alt="" /></a>
+            <header>
+              <h3><a href="#">Guitarist</a></h3>
+            </header>
+            <p>Play at live gigs. Guitar Tutor </p>             
+          </article>
+          <article>
+            <a href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1/1000493_10152052662928065_1325414723_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1/1000493_10152052662928065_1325414723_n.jpg" alt="" /></a>
+            <header>
+              <h3><a href="#">Research Assistant</a></h3>
+            </header>
+            <p>Have published two research papers.</p>              
+          </article>
+          <article>
+            <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/29357_10151537422158065_1460399246_n.jpg?lvh=1" class="image featured"><img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/29357_10151537422158065_1460399246_n.jpg?lvh=1" alt="" /></a>
+            <header>
+              <h3><a href="#">IBMer</a></h3>
+            </header>
+            <p>Work on Teradata 13 and Informatica PowerCenter 9.1.</p>             
+          </article>
+          <article>
+            <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/374782_10150600586553065_388208086_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/t1/374782_10150600586553065_388208086_n.jpg" alt="" /></a>
+            <header>
+              <h3><a href="#">Public Speaker</a></h3>
+            </header>
+            <p>I give lectures on music and "The Art of Presentations".</p>             
+          </article>
+          <article>
+            <a href="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash2/t1/388441_329603890393014_981537529_n.jpg" class="image featured"><img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash2/t1/388441_329603890393014_981537529_n.jpg" alt="" /></a>
+            <header>
+              <h3><a href="#">Blogging</a></h3>
+            </header>
+            <p>Am an avid blogger and blog about music and guitars and accessories in great depth.</p>              
+          </article>
+        </div>
       </div>
     </div>
     <!-- Main -->
-    <div class="wrapper style2">
+    <div id="portfolio" class="wrapper style2">
       <article id="main" class="container special">
         <header>
-          <h2><a href="#">Experience &amp; Publications</a></h2>
+          <br><br><h2><a href="#">Experience &amp; Publications</a></h2>
           <span class="byline">
             Computer Science Engineer.Author of 2 research papers.IBMer. Guitarist, Music Composer and an avid Blogger.An intern at ITC Infotech India Pvt Ltd and IIIT, Hyderabad. An AIESECer (Incoming Exchange).
           </span>
@@ -131,7 +128,7 @@
       </section>
     </div>
     <div id="footer">
-      <section class="contact">
+      <section id="contact" class="contact">
         <header>
           <h3>Want to say hi?</h3>
         </header>
@@ -149,5 +146,11 @@
         </ul>
       </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/util.js"></script>
   </body>
 </html>
